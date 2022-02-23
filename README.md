@@ -1,6 +1,11 @@
 # Okta Inline Hook Demo App
 This application is mainly used for demostration purposes to show the capabilities of Okta's inline hooks. It provides different various hooks upon prescribed scopes. End-users can select what type of data will be enriched to the identity token upon minting.
 
+Note: still work in progress
+
+<img width="600" alt="Main App" src="https://user-images.githubusercontent.com/6020066/155430309-e4846374-9d53-46e7-b076-155fed5b0cb9.png">
+
+
 ## Get Started
 ### Okta
 #### Create an OIDC application
