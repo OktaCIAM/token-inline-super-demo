@@ -1,0 +1,27 @@
+org: brh55
+app: okta-weather-dmeo
+service: weather-demo-inline
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+
+plugins:
+  - serverless-plugin-include-dependencies
+  - serverless-dotenv-plugin
+
+functions:
+  weather:
+    handler: weather.handler
+    events:
+      - httpApi:
+          path: /weather
+          method: post
+
+  mocker:
+    handler: mocker.handler
+    events:
+      - httpApi:
+          path: /mocker
+          method: post
