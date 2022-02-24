@@ -10,3 +10,4 @@ samples-java-spring
 .idea/
 yalc.lock
 .eslintcache
+.env
