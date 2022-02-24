@@ -37,14 +37,14 @@ First configure the corresponding `.okta.env` file with your issuer and client i
 
 ## Endpoint Services
 ### Weather
-> ** Designed for Real-Time API Chaining **
+> Designed for Real-Time API Chaining with Contextual Data
 
 This hook will make two synchrounous API calls:
 1. First, it will parse the requests contexts IP address to determine it's geolocation
 2. Afterwards, it will use the geolocation to get the current weather conditions for the user and inject those into the identity token
 
 ### Mocker
-> **Designed for Typical Scenarios (User Preferences, Subscription/Payment Plans, Invoices, etc) **
+> Designed for Typical Scenarios (User Preferences, Subscription/Payment Plans, Invoices, etc)
 
 This service provides a randomly generated set of mock of details around a gambit of different categories for all industries (food preferences, product details, subscription services, etc). A list of all of the possible mock data that can be enriched in the token is outlined in the scopes list above. *Note that this data will change upon every request*.
 
