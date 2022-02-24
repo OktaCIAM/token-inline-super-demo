@@ -5,7 +5,6 @@ This application is mainly used for demostration purposes to show the capabiliti
 
 <img width="600" alt="Main App" src="https://user-images.githubusercontent.com/6020066/155430309-e4846374-9d53-46e7-b076-155fed5b0cb9.png">
 
-
 ## Get Started
 ### Okta
 #### Create an OIDC application
@@ -14,15 +13,16 @@ Create a proper OIDC app within your Okta tenant as a SPA type. Copy over the cl
 #### Create Following Scopes
 Create the following scopes to be used for triggering the inline hook.
 
-- **Weather Scope:** "weather"
-- **Mocker Scopes:**  "appliance", "app", "bank", "beer", "blood", "invoice", "coffee", "commerce", "company", "computer", "crypto", "color", "dessert", "device", "food", "restaurant", "subscription"
+- **Weather Scope:** `weather`
+- **Mocker Scopes:** `appliance`, `app`, `bank`, `beer`, `blood`, `invoice`, `coffee`, `commerce`, `company`, `computer`, `crypto`, `color`, `dessert`, `device`, `food`, `restaurant`, `subscription`
 
 #### Configure Authorization Service Policies
 Add a policy / rule to your corresponding authorization server with the following scopes to trigger the associated the weather and the mock service inline hook.
 
 ### Serverless Lambda Deployment
-1. Install serverless CLI installed with 
-`npm install serverless -g`
+This project uses the Serverless framework to manage and deploy hooks. While Serverless is multi-cloud supported, this has only been tested with AWS, however, there should be minimal changes needed for other cloud providers.
+
+1. Install the Serverless CLI Globally: `npm install serverless -g`
 2. `cd hooks`
 3. `sls deploy`
 
